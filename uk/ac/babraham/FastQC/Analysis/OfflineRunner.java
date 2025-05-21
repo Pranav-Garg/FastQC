@@ -178,7 +178,7 @@ public class OfflineRunner implements AnalysisListener {
 
 		
 		if (FastQCConfig.getInstance().output_dir != null) {
-			String fileName = file.getFile().getName().replaceAll("stdin:","").replaceAll("\\.gz$","").replaceAll("\\.bz2$","").replaceAll("\\.txt$","").replaceAll("\\.fastq$", "").replaceAll("\\.fq$", "").replaceAll("\\.csfastq$", "").replaceAll("\\.sam$", "").replaceAll("\\.bam$", "").replaceAll("\\.ubam$", "")+"_fastqc.html";
+			String fileName = file.getFile().getName().replaceAll("stdin:","").replaceAll("\\.gz$","").replaceAll("\\.bz2$","").replaceAll("\\.txt$","").replaceAll("\\.fastq$", "").replaceAll("\\.fq$", "").replaceAll("\\.csfastq$", "").replaceAll("\\.sam$", "").replaceAll("\\.bam$", "").replaceAll("\\.ubam$", "").replaceAll("\\.cram$", "")+"_fastqc.html";
 			reportFile = new File(FastQCConfig.getInstance().output_dir+"/"+fileName);						
 		}
 		else {
